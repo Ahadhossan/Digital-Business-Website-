@@ -1,0 +1,84 @@
+.wwi-wrapper .container {
+    padding-top: 13rem;
+}
+
+.wwi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wwi-container>div {
+    flex: 1;
+}
+
+/* left =================== */
+.wwi-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wwi-left .head {
+    gap: 1rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.wwi-left .head .title {
+    text-align: left;
+    color: #fff;
+}
+
+.wwi-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wwi-feature{
+    display: flex;
+    flex-direction: column;
+        gap: .5rem;
+    max-width: 26rem;
+}
+
+.wwi-feature .des {
+    color: var(--fourth-color);
+}
+
+.wwi-feature .text {
+    color: #fff;
+    text-align: justify;
+}
+
+/* right ===================== */
+
+.wwi-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.wwi-right img {
+    width: 100%;
+}
+
+/* responsive */
+@media (max-width: 990px) {
+    .wwi-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+        .wwi-right {
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+        .wwi-right img {
+        max-width: 20rem;
+    }
+}

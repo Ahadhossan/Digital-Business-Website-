@@ -1,0 +1,133 @@
+.h-wrapper {
+  background-color: var(--primary-color);
+  height: 120vh;
+  overflow: hidden;
+}
+
+.h-wrapper .container {
+  padding-top: 7rem;
+}
+
+.h-arrow {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    max-width: 50rem;
+    z-index: 0;
+}
+
+.h-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  position: relative;
+}
+
+/* left -------------*/
+.h-left{
+    flex: 1;
+        display: flex;
+    gap: 2rem;
+   position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.image-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.person-pill {
+    height: 13rem;
+    width: 6rem;
+        border-radius: 999px;
+    overflow: hidden;
+}
+
+.person-pill-bg {
+    border-radius: 999px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.person-pill-bg>img {
+    width: 100%;
+    object-fit: cover;
+    scale: 2;
+    margin-top: 4rem;
+}
+
+.image-row> :nth-child(2){
+    transform: translateY(-4rem);
+}
+
+/* right ------------------*/
+.h-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.h-title {
+    color: var(--third-color);
+    font-size: 3rem;
+    flex-direction: column;
+    display: flex;
+     gap: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.h-title > :nth-child(3){
+    color: white;
+}
+
+.h-des {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+/* responsive ========== */
+@media (max-width: 1024px) {
+  .h-wrapper {
+    height: max-content;
+  }
+
+  .h-wrapper .container {
+    padding-top: 5rem;
+  }
+  
+  .h-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .h-arrow {
+    display: none;
+  }
+
+      .h-right {
+        flex: 1;
+        align-items: center;
+    }
+
+        .h-title {
+          align-items: center;
+        font-size: 2rem;
+    }
+
+    .h-des {
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+    }
+}

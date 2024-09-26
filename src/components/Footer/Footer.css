@@ -1,0 +1,47 @@
+.f-wrapper {
+    background-color: var(--primary-color);
+}
+
+.f-wrapper .container {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.f-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.f-container .title {
+    color: #fff;
+}
+
+.f-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.f-menu span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.f-container hr {
+    border-color: var(--border-color-light);
+    width: 100%;
+}
+
+@media (max-width: 990px) {
+    .f-menu {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
